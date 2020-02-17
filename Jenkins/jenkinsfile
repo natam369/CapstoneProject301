@@ -22,12 +22,11 @@ node {
    stage('Maven-Test') {
    sh label: '', script: 'mvn test'
   }
-  
-  stage('Sonar Analysis') {
-   withSonarQubeEnv('Sonarqube') {
-        sh "mvn sonar:sonar"
-    }
-  }
+  stage('Sonar Analysis'){
+        withSonarQubeEnv('Sonarqube'){
+         sh 'mvn sonar:sonar'
+        }
+        }
   /*
   stage('Sonar - Quality Gate') {
   	timeout(time: 1, unit: 'MINUTES') {
