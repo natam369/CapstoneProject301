@@ -4,10 +4,10 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/SaiCharanUppari/projectrepo.git'
+   git 'https://github.com/natam369/CapstoneProject.git'
   }
     
- def project_path="capstoneproject/capstoneproject/"
+ def project_path="Project/"
  
  dir(project_path) {
     
@@ -48,7 +48,7 @@ node {
                     def uploadSpec= """{
                         "files": [{
                         "pattern": "target/*.war",
-                        "target": "capstoneproject"}]
+                        "target": "project"}]
                     }"""
         server.upload(uploadSpec)
         
