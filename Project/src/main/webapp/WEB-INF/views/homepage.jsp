@@ -13,7 +13,7 @@ body {
   margin: 0;
 }
 .parallax { 
-    background-image: url("/resources/images/bike.jpg"); 
+    background-image: url("/resources/static/images/bike.jpg"); 
     min-height: 500px;  
    background-attachment: fixed; 
     background-position: center; 
