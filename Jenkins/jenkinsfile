@@ -4,7 +4,7 @@ node {
 
      
   stage('Git-Checkout') {
-   git 'https://github.com/natam369/CapstoneProject.git'
+   git 'https://github.com/natam369/CapstoneProject301.git'
   }
     
  def project_path="Project/"
