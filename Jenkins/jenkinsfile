@@ -53,7 +53,7 @@ node {
         
         }
 	stage('Downstream Build -- Docker Deployment'){
-	 build 'Dockerdeployment'
+	 build 'CapstoneDocker'
 	}
 }  
 
